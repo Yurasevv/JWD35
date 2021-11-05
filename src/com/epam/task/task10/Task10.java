@@ -8,13 +8,6 @@ public class Task10 {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         scanner.close();
-    }
-    private int n;
-
-    public Task10() {
-        Scanner scanner = new Scanner(System.in);
-        n = scanner.nextInt();
-        scanner.close();
 
         int[][] array = new int[n][n];
 
@@ -34,6 +27,7 @@ public class Task10 {
                 System.out.print(" " + array[i][j]);
             }
             System.out.println();
+
         }
     }
 }
