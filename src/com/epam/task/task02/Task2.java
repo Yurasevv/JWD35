@@ -5,19 +5,16 @@ import java.util.Scanner;
 import static java.lang.Math.*;
 
 public class Task2 {
-    private double a;
-    private double b;
-    private double c;
 
-    public Task2() {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        a = scanner.nextInt();
-        b = scanner.nextInt();
-        c = scanner.nextInt();
+        double a = scanner.nextInt();
+        double b = scanner.nextInt();
+        double c = scanner.nextInt();
         scanner.close();
-    }
-    public double calculateSum() {
-        return (b + sqrt(pow(b, 2) + 4 * a * c)) / (2 * a) - pow(a, 3) * c + pow(b, 0.5);
-    }
 
+        double sum = (b + sqrt(pow(b, 2) + 4 * a * c)) / (2 * a) - pow(a, 3) * c + pow(b, 0.5);
+        System.out.println(sum);
+
+    }
 }

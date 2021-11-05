@@ -3,20 +3,18 @@ package com.epam.task.task01;
 import java.util.Scanner;
 
 public class Task1 {
-    private int n;
 
-    public Task1() {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        n = scanner.nextInt();
-        scanner.close();
-    }
 
-    public boolean calculateSum() {
+        int n = scanner.nextInt();
+        boolean b = false;
+
+        scanner.close();
 
         if( n / 1000 + n / 100 % 10 == n % 10 + n % 100 / 10) {
-            return true;
+            b = true;
         }
-        return false;
+        System.out.println(b);
     }
-
 }
